@@ -1,0 +1,4 @@
+var phrases = []
+var letters = []
+
+
