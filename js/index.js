@@ -16,8 +16,10 @@ var words = ['BANANA','PHILADELPHIA','OSTRICH','JUPITER','CHEESEBURGER','CAPPUCC
 //Array of categories
 var categories = ['FRUIT','CITY','ANIMAL','PLANET','FOOD','DRINK']
 
-//Get random word
-var word = words[Math.floor(Math.random() * words.length)]
+//Get random word + category
+
+var random = Math.random()
+var word = words[Math.floor(random * words.length)]
 var hint = categories[Math.floor(random * words.length)]
 
 //Answer array
@@ -30,6 +32,7 @@ for (let i = 0; i < word.length; i++){
 var guessWord = document.getElementById('guessWord')
 var category = document.getElementById('category')
 guessWord.innerHTML = answerArray.join(" ")
+category.innerHTML += hint
 
 //Keep track of letters that remain to be guessed
 var remainingLetters = word.length
@@ -50,6 +53,7 @@ function play(letter){
 		}
 	}
 	guessWord.innerHTML = answerArray.join(" ")
+	
 	
 }
 
