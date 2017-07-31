@@ -1,14 +1,23 @@
+window.onload = function () {
+	var letters = document.getElementById("letters").children
+	for (letter of letters) {
+    letter.addEventListener("click", function(e){ 
+    	play(this.innerText)
+    	console.log(this.innerText)
+    })
+  }
+}
+
 function id(str){
 	return document.getElementById(str)
 }
-
-var start = id('start')
+// var start = id('start')
 var phrase = id('phrase')
 // var letter = id('letter')
 
 //Array of words
 var words = [
-	'JAVASCRIPTL',
+	'JAVASCRIPT',
 	'APPLESAUCE',
 	'ANIMAL',
 	'WATERMELON'
@@ -32,19 +41,20 @@ var remainingLetters = word.length
 function play(letter){
 		
 	// The Game Loop
-	while (remainingLetters > 0) {
+	if (remainingLetters > 0) {
 		
-		phrase.innerHTML = answerArray.join(" ")
-	
+		phrase.innerHTML = answerArray
+
 		var guess = letter
 		for (let j = 0; j < word.length; j++){
 			if (word[j] === guess){
-			answerArray[j] = guess
-			remainingLetters--
+				answerArray[j] = guess
+				remainingLetters--
+				console.log(letter)
 			} 
 		}
 	}
-	phrase.innerHTML = answerArray.join(" ")	
+	phrase.innerHTML = answerArray.join(" ")
 }
 
 
