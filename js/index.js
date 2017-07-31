@@ -9,10 +9,10 @@ var letter = id('letter')
 //Choosing a random word
 //Create and array of words
 var words = [
-	'javascript',
-	'celebration',
-	'animal',
-	'animation'
+	'JAVASCRIPT',
+	'APPLESAUCE',
+	'ANIMAL',
+	'WATERMELON'
 ]
 
 var word = words[Math.floor(Math.random() * words.length)]
@@ -44,7 +44,7 @@ class Game {
 					//Show the player their progress
 					phrase.innerHTML = answerArray.join(' ')
 					//Get a guess from the player
-					var guess = letter.innerText	
+					var guess = letter.innerHTML	
 					for (var j = 0; j < word.length; j++){
 						if (word[j] === guess){
 						answerArray[j] = guess
@@ -52,7 +52,7 @@ class Game {
 						}
 					}
 				// The end of the Game Loop
-				
+
 				}
 				
 			})
