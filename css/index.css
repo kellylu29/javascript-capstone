@@ -1,7 +1,7 @@
 * {
 	font-family: sans-serif;
 /*	border: 1px dashed black;*/
-	/*background-color: rgba(0, 0, 0, 0.1);*/
+	/*backgr*/ound-color: rgba(0, 0, 0, 0.1);
 }
 
 html{
@@ -43,7 +43,7 @@ div{
 #guessWord {
 	padding-top: 40px;
 	font-size: 40px;
-	height: 40%;
+	height: 30%;
 }
 
 /*#start {
@@ -54,7 +54,22 @@ div{
 }*/
 
 #category {
-	height: 50%;
+	height: 20%;
+	font-size: 24px;
+}
+
+#triesLeft {
+	margin-top: 10px;
+	margin-bottom:10px;
+	font-size: 24px;
+	height: 10%;
+}
+
+#winLose{
+	margin-top: 10px;
+	height: 20%;
+	font-size: 40px;
+	font-weight: bold;
 }
 
 #letters {
