@@ -16,7 +16,8 @@ var words = ['BANANA','PHILADELPHIA','OSTRICH',
 'SNOWBOARDING', 'ARMAGEDDON', 'THANKSGIVING',
 'SEPTEMBER', 'PINEAPPLE', 'GIRAFFE',
 'SPAGHETTI', 'VENUS', 'MIAMI',
-'LEOPARD', 'SMOOTHIE', 'CHRISTMAS']
+'LEOPARD', 'SMOOTHIE', 'CHRISTMAS',
+'TITANIC', 'BASEBALL', 'OCTOBER']
 
 //Array of categories
 var categories = ['Fruit','City','Animal',
@@ -24,7 +25,8 @@ var categories = ['Fruit','City','Animal',
 'Sport', 'Movie', 'Holiday',
 'Month', 'Fruit', 'Animal',
 'Food', 'Planet', 'City',
-'Animal', 'Drink', 'Holiday']
+'Animal', 'Drink', 'Holiday',
+'Movie', 'Sport', 'Month']
 
 //Get random word + category
 var random = Math.random()
@@ -51,7 +53,7 @@ var triesLeft = id('triesLeft')
 
 //Show answer array and hint
 guessWord.innerHTML = answerArray.join(" ")
-category.innerHTML += hint
+category.innerHTML = "<strong>Category:</strong><br>" + hint
 
 //Keep track of letters that remain to be guessed
 var remainingLetters = word.length
