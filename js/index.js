@@ -17,7 +17,8 @@ var words = ['BANANA','PHILADELPHIA','OSTRICH',
 'SEPTEMBER', 'PINEAPPLE', 'GIRAFFE',
 'SPAGHETTI', 'VENUS', 'MIAMI',
 'LEOPARD', 'SMOOTHIE', 'CHRISTMAS',
-'TITANIC', 'BASEBALL', 'OCTOBER']
+'TITANIC', 'BASEBALL', 'OCTOBER',
+'PHOENIX', 'WATERMELON', 'MONKEY']
 
 //Array of categories
 var categories = ['Fruit','City','Animal',
@@ -26,7 +27,8 @@ var categories = ['Fruit','City','Animal',
 'Month', 'Fruit', 'Animal',
 'Food', 'Planet', 'City',
 'Animal', 'Drink', 'Holiday',
-'Movie', 'Sport', 'Month']
+'Movie', 'Sport', 'Month',
+'City', 'Fruit', 'Animal']
 
 //Get random word + category
 var random = Math.random()
@@ -77,7 +79,7 @@ function play(letter){
 				remainingLetters--
 				found = true
 			}
-			// *WIN*
+			// *WIN* Reload
 			if (remainingLetters === 0) {
 				winLose.innerHTML = "YOU GOT IT!"
 				setTimeout(function(){
@@ -90,7 +92,7 @@ function play(letter){
 	if (!found){
 		maxTries--
 	}
-	// *LOSE*
+	// *LOSE* Reload
 	if (maxTries === 0) {
 		winLose.innerHTML = "SORRY, YOU LOST :("
 		setTimeout(function(){
