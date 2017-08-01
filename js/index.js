@@ -29,7 +29,8 @@ var categories = ['Fruit','City','Animal',
 'Food', 'Planet', 'City',
 'Animal', 'Drink', 'Holiday',
 'Movie', 'Sport', 'Month',
-'City', 'Fruit', 'Animal']
+'City', 'Fruit', 'Animal',
+'City', 'Food', 'Animal']
 
 //Get random word + category
 var random = Math.random()
