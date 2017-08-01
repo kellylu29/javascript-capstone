@@ -15,14 +15,16 @@ var words = ['BANANA','PHILADELPHIA','OSTRICH',
 'JUPITER','CHEESEBURGER','CAPPUCCINO', 
 'SNOWBOARDING', 'ARMAGEDDON', 'THANKSGIVING',
 'SEPTEMBER', 'PINEAPPLE', 'GIRAFFE',
-'SPAGHETTI', 'VENUS', 'MIAMI']
+'SPAGHETTI', 'VENUS', 'MIAMI',
+'LEOPARD', 'SMOOTHIE', 'CHRISTMAS']
 
 //Array of categories
 var categories = ['Fruit','City','Animal',
 'Planet','Food','Drink', 
 'Sport', 'Movie', 'Holiday',
 'Month', 'Fruit', 'Animal',
-'Food', 'Planet', 'City']
+'Food', 'Planet', 'City',
+'Animal', 'Drink', 'Holiday']
 
 //Get random word + category
 var random = Math.random()
