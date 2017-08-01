@@ -1,9 +1,15 @@
 * {
-	/*background-color: rgba(0, 0, 0, 0.1);*/
+	/*background-color: rgba(0, 0, 0, 0.1);*/;
+	
 }
 
 html{
 	height: 100%;
+	background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, aquamarine , azure); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, aquamarine , azure); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, aquamarine , azure); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, aquamarine , azure); /* Standard syntax */
 }
 
 body{
@@ -11,6 +17,7 @@ body{
 }
 
 h1 {
+	color: navy;
 	font-size: 3em;
 	font-family: 'Sofia', cursive;
 }
@@ -91,7 +98,7 @@ button {
 	height: 40px;
 	border-radius: 5px;
 	border: 1px dashed black;
-	background-color: #CCFFE3;
+	background-color: peachpuff;
 	padding: 0;
 	transition: all 0.5s ease
 }
@@ -101,6 +108,6 @@ button:hover{
 	cursor: pointer;
 }
 
-.hidden {
-	display: none;
+button:disabled{
+	background-color: rgba(255, 215, 233, 0.2);
 }
