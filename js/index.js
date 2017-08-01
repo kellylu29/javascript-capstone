@@ -21,7 +21,8 @@ var words = ['BANANA','PHILADELPHIA','OSTRICH',
 'PHOENIX', 'WATERMELON', 'MONKEY',
 'TORONTO', 'RAMEN', 'SHEEP',
 'SPRITE', 'QUESADILLA', 'SATURN',
-'BASKETBALL', 'MATRIX', 'CHERRY']
+'BASKETBALL', 'MATRIX', 'CHERRY',
+'FEBRUARY', 'LATTE', 'CAMEL']
 
 //Array of categories
 var categories = ['Fruit','City','Animal',
