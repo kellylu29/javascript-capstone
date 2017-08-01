@@ -42,6 +42,7 @@ div{
 }
 
 .guessBox {
+	font-family: 'NTR', sans-serif;
 	display: inline-block;
 	float: left;
 	margin: 0 auto;
@@ -57,13 +58,11 @@ div{
 }
 
 #category {
-	font-family: 'Open Sans Condensed', sans-serif;
 	height: 20%;
 	font-size: 24px;
 }
 
 #triesLeft {
-	font-family: 'Open Sans Condensed', sans-serif;
 	margin-top: 10px;
 	margin-bottom:10px;
 	padding-bottom: 40px;
@@ -79,7 +78,7 @@ div{
 }
 
 #letters {
-	font-family: 'Open Sans Condensed', sans-serif;
+	font-family: 'NTR', sans-serif;
 	font-size: 24px;
 	height: 200px;
 	width: 100%;
