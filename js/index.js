@@ -46,7 +46,7 @@ category.innerHTML += hint
 var remainingLetters = word.length
 var maxTries = 5
 
-triesLeft.innerHTML = "Tries Left:<br>" + maxTries
+triesLeft.innerHTML = "<strong>Tries Left:</strong><br>" + maxTries
 
 function play(letter){
 	let found = false	
@@ -64,7 +64,7 @@ function play(letter){
 			}
 
 			if (remainingLetters === 0) {
-				winLose.innerHTML = "<br>YOU GOT IT!"
+				winLose.innerHTML = "YOU GOT IT!"
 				setTimeout(function(){
 					window.location.reload()
 				}, 2000)
@@ -77,13 +77,13 @@ function play(letter){
 	}
 
 	if (maxTries === 0) {
-		winLose.innerHTML = "<br>SORRY, YOU LOST :("
+		winLose.innerHTML = "SORRY, YOU LOST :("
 		setTimeout(function(){
 					window.location.reload()
 				}, 2000)
 	}
 
-	triesLeft.innerHTML = "Tries Left:<br>" + maxTries
+	triesLeft.innerHTML = "<strong>Tries Left:</strong><br>" + maxTries
 	guessWord.innerHTML = answerArray.join(" ")
 }
 
