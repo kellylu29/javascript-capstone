@@ -14,13 +14,15 @@ window.onload = function () {
 var words = ['BANANA','PHILADELPHIA','OSTRICH',
 'JUPITER','CHEESEBURGER','CAPPUCCINO', 
 'SNOWBOARDING', 'ARMAGEDDON', 'THANKSGIVING',
-'SEPTEMBER', 'PINEAPPLE', 'GIRAFFE']
+'SEPTEMBER', 'PINEAPPLE', 'GIRAFFE',
+'SPAGHETTI', 'VENUS', 'MIAMI']
 
 //Array of categories
 var categories = ['Fruit','City','Animal',
 'Planet','Food','Drink', 
 'Sport', 'Movie', 'Holiday',
-'Month', 'Fruit', 'Animal']
+'Month', 'Fruit', 'Animal',
+'Food', 'Planet', 'City']
 
 //Get random word + category
 var random = Math.random()
