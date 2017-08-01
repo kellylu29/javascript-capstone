@@ -11,10 +11,16 @@ window.onload = function () {
 }
 
 //Array of words
-var words = ['BANANA','PHILADELPHIA','OSTRICH','JUPITER','CHEESEBURGER','CAPPUCCINO']
+var words = ['BANANA','PHILADELPHIA','OSTRICH',
+'JUPITER','CHEESEBURGER','CAPPUCCINO', 
+'SNOWBOARDING', 'ARMAGEDDON', 'THANKSGIVING',
+'SEPTEMBER', 'PINEAPPLE', 'GIRAFFE']
 
 //Array of categories
-var categories = ['Fruit','City','Animal','Planet','Food','Drink']
+var categories = ['Fruit','City','Animal',
+'Planet','Food','Drink', 
+'Sport', 'Movie', 'Holiday',
+'Month', 'Fruit', 'Animal']
 
 //Get random word + category
 var random = Math.random()
@@ -38,7 +44,7 @@ category.innerHTML += hint
 
 //Keep track of letters that remain to be guessed
 var remainingLetters = word.length
-var maxTries = 10
+var maxTries = 5
 
 triesLeft.innerHTML = "Tries Left:<br>" + maxTries
 
@@ -58,10 +64,10 @@ function play(letter){
 			}
 
 			if (remainingLetters === 0) {
-				winLose.innerHTML = "YOU GOT IT!"
+				winLose.innerHTML = "<br>YOU GOT IT!"
 				setTimeout(function(){
 					window.location.reload()
-				}, 1500)
+				}, 2000)
 			}
 		}
 	}
@@ -72,6 +78,9 @@ function play(letter){
 
 	if (maxTries === 0) {
 		winLose.innerHTML = "<br>SORRY, YOU LOST :("
+		setTimeout(function(){
+					window.location.reload()
+				}, 2000)
 	}
 
 	triesLeft.innerHTML = "Tries Left:<br>" + maxTries
