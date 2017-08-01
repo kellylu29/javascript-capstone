@@ -1,7 +1,5 @@
 * {
-	font-family: sans-serif;
-/*	border: 1px dashed black;*/
-	/*backgr*/ound-color: rgba(0, 0, 0, 0.1);
+	/*background-color: rgba(0, 0, 0, 0.1);*/
 }
 
 html{
@@ -14,6 +12,7 @@ body{
 
 h1 {
 	font-size: 3em;
+	font-family: 'Sofia', cursive;
 }
 
 p {
@@ -41,7 +40,9 @@ div{
 	float: left;
 	margin: 0 auto;
 	width: 100%;
-	height: 400px;
+	height: 500px;
+	border: 1px dashed #000;
+	background-color: pink;
 }
 
 #guessWord {
@@ -51,13 +52,16 @@ div{
 }
 
 #category {
+	font-family: 'Open Sans Condensed', sans-serif;
 	height: 20%;
 	font-size: 24px;
 }
 
 #triesLeft {
+	font-family: 'Open Sans Condensed', sans-serif;
 	margin-top: 10px;
 	margin-bottom:10px;
+	padding-bottom: 40px;
 	font-size: 24px;
 	height: 10%;
 }
@@ -70,8 +74,11 @@ div{
 }
 
 #letters {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 24px;
 	height: 200px;
 	width: 100%;
+	padding-top: 30px;
 	margin: 5px 0 auto;
 	clear: left;
 }
