@@ -32,31 +32,40 @@ var hint = categories[Math.floor(random * words.length)]
 //Array of answers
 var answerArray = []
 
+//Replace letter with blank at each index
 for (let i = 0; i < word.length; i++){
 	answerArray[i] = "_"
 }
 
-var guessWord = document.getElementById('guessWord')
-var category = document.getElementById('category')
-var winLose = document.getElementById('winLose')
-var triesLeft = document.getElementById('triesLeft')
+//Get elements by id
+function id(str){
+	return document.getElementById(str)
+}
+//Declare variables for elements
+var guessWord = id('guessWord')
+var category = id('category')
+var winLose = id('winLose')
+var triesLeft = id('triesLeft')
 
+//Show answer array and hint
 guessWord.innerHTML = answerArray.join(" ")
 category.innerHTML += hint
 
 //Keep track of letters that remain to be guessed
 var remainingLetters = word.length
+//Maximum amount of tries
 var maxTries = 5
 
+//Show amount of tries 
 triesLeft.innerHTML = "<strong>Tries Left:</strong><br>" + maxTries
 
 function play(letter){
 	let found = false	
 	// The Game Loop
 	if (remainingLetters > 0) {
-		
-		guessWord.innerHTML = answerArray
-
+		//Update inner HTML with answer
+		guessWord.innerTextHTML = answerArray
+		//Guess equals button letter
 		var guess = letter
 		for (let j = 0; j < word.length; j++){
 			if (word[j] === guess){
@@ -64,7 +73,7 @@ function play(letter){
 				remainingLetters--
 				found = true
 			}
-
+			// *WIN*
 			if (remainingLetters === 0) {
 				winLose.innerHTML = "YOU GOT IT!"
 				setTimeout(function(){
@@ -73,11 +82,11 @@ function play(letter){
 			}
 		}
 	}
-
+	//Decrease number of max tries if chosen letter is incorrect
 	if (!found){
 		maxTries--
 	}
-
+	// *LOSE*
 	if (maxTries === 0) {
 		winLose.innerHTML = "SORRY, YOU LOST :("
 		setTimeout(function(){
